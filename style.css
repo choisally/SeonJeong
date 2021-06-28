@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Marcellus&family=Nanum+Gothic+Coding+Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+body {
+  box-sizing: border-box;
+  color: #f1f1f1;
+  font-family: "Lucida Sans Regular", "Marcellus";
+}
+/*--header--*/
+header {
+  position: fixed;
+  width: 100%;
+  min-width: 1200px;
+  color: #f1f1f1;
+  z-index: 1;
+}
+header > nav {
+  width: 100%;
+  padding: 30px;
+  background: rgba(106, 96, 148, 0.5);
+}
+.wrapper {
+  min-width: 1200px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.wrapper > .menu1 {
+  display: flex;
+  margin-left: 30px;
+}
+.wrapper > .menu2 {
+  cursor: pointer;
+  margin-left: 210px;
+  font-size: 14px;
+}
+
+.wrapper > .menu2 i {
+  font-size: 15px;
+}
+.wrapper > .menu2:hover {
+  color: #e5bbb4;
+}
+.wrapper > .menu1 li:hover {
+  padding: 0px 2px;
+  border-radius: 30%;
+  border: none solid;
+  color: #3a3532;
+}
+header .logo {
+  font-family: "Lucida Sans Regular", "Marcellus";
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+header .menu1 li {
+  margin-left: 80px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s cubic-bezier(0.03, 0.84, 0.43, 0.97);
+}
+/*----main----*/
+#main > .slideImg {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+.img {
+  width: 300%;
+  height: 700px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.img li {
+  width: 33.333%;
+  float: left;
+  transition: all cubic-bezier(0.149, 0.95, 0.295, 2);
+}
+
+.dot {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dot > li {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border: 2px solid #fff;
+  margin: 0px 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot > li.on {
+  background-color: #fff;
+}
+
+.imgtxt {
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.imgtxt li {
+  display: flex;
+}
+.imgtxt li:first-child {
+  margin-left: 240px;
+  letter-spacing: 15px;
+  line-height: 1;
+}
+.imgtxt li:nth-child(2) {
+  position: absolute;
+  bottom: 90px;
+  right: 190px;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+.imgtxt li:nth-child(3) {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+/*WELCOME TO ALEXPENSION*/
+#sub_bar {
+  background-color: #f2f2f2;
+  font-family: "Playfair Display", "Nanum Gothic Coding";
+}
+#sub_bar > .wrap {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#sub_bar > .wrap > .sub_box {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+#sub_bar > .wrap > .sub_box li {
+  font-size: 20px;
+  color: #999;
+}
+
+#sub_bar > .wrap > .sub_box p:nth-child(1) {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 0px;
+  letter-spacing: 10px;
+  color: #bb7d61;
+}
+#sub_bar > .wrap > .sub_box p:nth-child(3) {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px 0px;
+  letter-spacing: 6px;
+  color: #777;
+}
+/*sub_input*/
+#sub_bar > .wrap > .sub_box li input {
+  float: left;
+  position: relative;
+  left: 145px;
+  bottom: 10px;
+  padding: 8px 12px;
+  font-weight: bold;
+  color: #f3f3f3;
+  background-color: rgb(212, 173, 122);
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  margin: 10px 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #888;
+}
+#sub_bar > .wrap > .sub_box li:nth-child(2) input {
+  padding: 8px 27px;
+  background-color: #888;
+  color: #fff;
+}
+
+/*sub_img*/
+#sud_img {
+  width: 100%;
+}
+#sud_img > .wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+#sud_img > .wrap h2 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  color: #666;
+  text-align: center;
+  padding-top: 80px;
+  letter-spacing: 5px;
+}
+#sud_img > .wrap p {
+  font-family: "Nanum Gothic Coding";
+  font-weight: bold;
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  padding-top: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+#sud_img > .wrap > .imagebox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#sud_img > .wrap > .imagebox img {
+  width: 380px;
+  height: 250px;
+  display: flex;
+  margin: 1px 1px;
+  opacity: 0.7;
+}
+#sud_img > .wrap > .imagebox img:hover {
+  opacity: 1;
+  border-radius: 3px;
+}
+/*-----------------------------------------view--*/
+#slide {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  padding: 80px 0px;
+  background-color: #edeeee;
+}
+#slide > .imgs {
+  width: 1200px;
+  height: 650px;
+  position: relative;
+  margin: auto;
+}
+.imgs > li {
+  width: 1200px;
+  height: 650px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s cubic-bezier(0.455, 012, 1.915, 0.855);
+}
+.imgs > li > img {
+  width: 1200px;
+}
+
+#slide > div {
+  text-align: center;
+  color: #666;
+  font-family: "Nanum Gothic Coding";
+  font-weight: normal;
+  margin-top: 30px;
+}
+#slide > div > h1 {
+  margin: 10px 0px;
+  font-size: 30px;
+  font-family: "Gill Sans MT";
+}
+#slide > div > h3 {
+  margin: 10px 0px;
+}
+#content01 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 1100px;
+  margin-top: 200px;
+  position: relative;
+  overflow: hidden;
+}
+#content01 > .bg1 {
+  width: 1100px;
+  height: 900px;
+  margin: auto;
+  background-color: #8e9eab;
+  position: relative;
+  left: -50px;
+}
+.contents {
+  width: 100%;
+  max-width: 1200px;
+  position: absolute;
+  left: -180px;
+  top: -80px;
+  transform: translate(50%);
+}
+
+.contents > p {
+  font-size: 18px;
+  color: rgb(92, 84, 84);
+  line-height: 40px;
+  text-align: center;
+}
+.contents > .box {
+  margin-top: 40px;
+  width: 1200px;
+}
+
+.contents > .box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contents > .box > li {
+  width: 450px;
+  height: 330px;
+  float: left;
+  margin: 70px 70px;
+  position: relative;
+  border-radius: 2px;
+}
+
+.contents > .box .txt {
+  width: 320px;
+  height: 180px;
+  background-color: #e8f1d4;
+  padding: 10px 0px 0px;
+  box-sizing: border-box;
+  position: absolute;
+  right: -20px;
+  bottom: -100px;
+  border-radius: 2px;
+}
+
+.contents > .box .txt h2 {
+  font-size: 18px;
+  color: #3b4961;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 18px;
+}
+.contents > .txt > p {
+  margin-bottom: 10px;
+}
+.txt > .txt1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+.txt > .txt2 {
+  font-size: 13px;
+  color: #999;
+}
+
+#content02 {
+  width: 100%;
+  height: 300px;
+  margin: 30px auto;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Nanum Gothic Coding";
+  padding: 50px 0px;
+  color: #666;
+}
+#content02 > .wrap {
+  width: 1200px;
+  text-align: left;
+  position: relative;
+  margin: auto;
+  margin-top: -50px;
+}
+
+#content02 > .wrap > ul h2 {
+  margin-left: 20px;
+  font-size: 21px;
+}
+#content02 > .wrap > ul p {
+  line-height: 20px;
+}
+/*--------------------------resrvation----*/
+#resrvation01 {
+  width: 100%;
+  height: 650px;
+  background: linear-gradient(180deg, #9dc8c9, #58c9b9, #519d9f, #d1b6e1);
+}
+#resrvation01 > .wrap {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 200px;
+}
+#resrvation01 > .wrap .txt h2 {
+  font-size: 35px;
+  letter-spacing: 8px;
+  line-height: 1.5;
+}
+#resrvation01 > .wrap > .txt p {
+  line-height: 0;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#resrvation01 > .wrap > .clickMenu {
+  width: 700px;
+  position: relative;
+  margin: -18px auto;
+  padding: 14px 0px;
+  top: 350px;
+  left: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #999;
+}
+#resrvation01 > .wrap > .clickMenu a {
+  padding: 12px 50px;
+  margin: auto 5px;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#resrvation01 > .wrap > .clickMenu a:hover {
+  color: #555;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+#r01 {
+  /*메뉴바 하단 보더*/
+  border: 1px solid #f1f1f1;
+  margin: 10px auto;
+}
+#r02 {
+  /*01.이용안내상단*/
+  border: 1px solid #f1f1f1;
+  margin: 20px 0px 50px auto;
+}
+#r03 {
+  /*01.이용안내하단*/
+  border: 1px dotted #cccc;
+  margin: 100px auto;
+}
+#r04 {
+  /*02.예약 및 비용안내 상단*/
+  border: 1px solid #f1f1f1;
+  margin: 20px 0px 50px auto;
+}
+#r05 {
+  /*02.예약 및 비용안내 하단*/
+  border: 1px dotted #cccc;
+  margin: 100px auto;
+}
+#r06 {
+  /*03.예약상단*/
+  border: 1px solid #f1f1f1;
+  margin: 20px 0px 50px auto;
+}
+
+/*--------------------------resrvation02---*/
+#resrvation02 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  color: #666;
+}
+#resrvation02 > .wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 10px;
+  margin-top: 200px;
+}
+#resrvation02 > .wrap > div {
+  font-size: 23px;
+  font-weight: bold;
+}
+#resrvation02 > .wrap > div em {
+  font-size: 27px;
+  font-weight: bold;
+  color: #bb7d61;
+}
+#resrvation02 > .wrap > p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #777;
+}
+#resrvation02 > .wrap > ul > li {
+  margin: 8px 0px;
+  font-size: 17px;
+}
+#resrvation02 > .wrap > a input {
+  padding: 14px 60px;
+  margin: 0px 5px;
+  background-color: #53664c;
+  color: #ffff;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*--------------------------directions----*/
+#directions > .wrap {
+  width: 100%;
+  color: #333;
+  box-sizing: border-box;
+  background-color: #f8f1e5;
+  padding: 50px 0px;
+  margin-bottom: -100px;
+}
+#directions > .wrap img {
+  width: 100%;
+  height: 800px;
+}
+#directions > .wrap > div > h2 {
+  font-family: "Nanum Gothic Coding";
+  color: #f1f1f1;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-size: 50px;
+  font-weight: normal;
+  transform: translate(-50%, -50%);
+  letter-spacing: 20px;
+}
+#directions > .wrap > div > p {
+  font-size: 20px;
+  font-family: "Nanum Gothic Coding";
+  color: #f1f1f1;
+  position: absolute;
+  top: 43%;
+  left: 48%;
+  font-weight: normal;
+  transform: translate(-50%, -50%);
+}
+#directions > .wrap > span {
+  width: 100%;
+  text-align: center;
+  font-family: "Gill Sans MT", "Trebuchet MS", sans-serif;
+  float: left;
+}
+#directions > .wrap > span h2 {
+  font-size: 40px;
+  margin-top: 50px;
+}
+#directions > .wrap > span p {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+#directions > .wrap > .map {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+iframe {
+  width: 1200px;
+  height: 800px;
+}
+#directions > .wrap > .map div {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: -1px;
+  background-color: #807f89;
+  color: #d7dbd1;
+  margin: 10px 0px;
+}
+#directions > .wrap > .map div i {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  color: #f1f1f1;
+}
+#directions > .wrap > .txt {
+  width: 1200px;
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid #666;
+  box-sizing: border-box;
+}
+
+#directions > .wrap > .txt div:nth-child(2),
+#directions > .wrap > .txt div:nth-child(3) {
+  width: 50%;
+  margin: 0px 20px;
+  font-family: "Gill Sans MT";
+  font-size: 15px;
+}
+#directions > .wrap > .txt div:first-child {
+  width: 50%;
+  margin: auto;
+  padding-left: 100px;
+}
+#directions > .wrap > .txt p {
+  font-size: 16px;
+}
+#directions > .wrap > .txt h2 {
+  font-weight: normal;
+  margin-left: 15px;
+  font-family: "Trebuchet MS";
+}
+#directions > .wrap > .txt .first {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: -10px;
+}
+/*---footer---*/
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #3b4961;
+  margin-top: 100px;
+}
+footer > .wrap {
+  width: 100%;
+  justify-content: center;
+  font-family: "Nanum Gothic Coding";
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+  font-weight: normal;
+}
+footer > .wrap div {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+.wrap > .tel {
+  font-size: 30px;
+  color: #ccc;
+}
+footer > h1,
+h3 {
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif, "Do Hyeon";
+  letter-spacing: 3px;
+}
+footer > h3 {
+  padding-bottom: 30px;
+}
+footer > .wrap > .tel,
+p {
+  margin: 20px;
+}
+/*--topButton--*/
+.btntop i {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 40px;
+  padding: 5px 8px;
+  background-color: white;
+  color: #3b4961;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+}
+.btntop i:hover {
+  background-color: #3b4961;
+  color: white;
+}
+/*--clickOn--*/
+.clickOn {
+  color: #666;
+}
